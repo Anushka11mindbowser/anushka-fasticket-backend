@@ -1,0 +1,288 @@
+ERROR 2022-08-13 17:15:38,670 log 12296 23596 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:15:38,675 basehttp 12296 23596 "GET /bookings/createBooking HTTP/1.1" 500 102251
+ERROR 2022-08-13 17:16:54,058 log 1752 18940 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:16:54,059 basehttp 1752 18940 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:16:55,317 log 1752 18940 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:16:55,318 basehttp 1752 18940 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:18:52,384 log 11936 10060 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:18:52,386 basehttp 11936 10060 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:18:53,461 log 11936 10060 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:18:53,463 basehttp 11936 10060 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:18:53,750 log 11936 10060 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:18:53,751 basehttp 11936 10060 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:18:54,107 log 11936 10060 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:18:54,108 basehttp 11936 10060 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:18:54,303 log 11936 10060 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:18:54,304 basehttp 11936 10060 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:18:54,518 log 11936 10060 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:18:54,519 basehttp 11936 10060 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:18:54,721 log 11936 10060 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:18:54,722 basehttp 11936 10060 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:18:55,183 log 11936 10060 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:18:55,184 basehttp 11936 10060 "GET /bookings/createBooking HTTP/1.1" 500 102388
+ERROR 2022-08-13 17:18:55,573 log 11936 10060 Internal Server Error: /bookings/createBooking
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 724, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 655, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\renderers.py", line 563, in get_raw_data_form
+    data = serializer.data.copy()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 257, in data
+    self._data = self.get_initial()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\serializers.py", line 405, in get_initial
+    for field in self.fields.values()
+AttributeError: 'str' object has no attribute 'values'
+ERROR 2022-08-13 17:18:55,575 basehttp 11936 10060 "GET /bookings/createBooking HTTP/1.1" 500 102388
