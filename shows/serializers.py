@@ -8,10 +8,10 @@ from .models import (
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = Movies
-        fields = '__all__'
+        fields = ['movie_name', 'movie_genre', 'movie_time', 'movie_poster', 'movie_language']
 
 class PlaysSerializer(serializers.ModelSerializer):
     class Meta:
         model = Plays
-        fields = '__all__'
+        fields = ['play_name', 'play_genre', 'play_duration', 'play_poster', 'play_language']
 
