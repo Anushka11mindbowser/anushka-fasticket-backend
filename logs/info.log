@@ -5615,3 +5615,423 @@ INFO Watching for file changes with StatReloader
 INFO Watching for file changes with StatReloader
 INFO Watching for file changes with StatReloader
 INFO Watching for file changes with StatReloader
+WARNING Not Found: /admin/tickets/seats/add/
+WARNING "GET /admin/tickets/seats/add/ HTTP/1.1" 404 4869
+INFO "GET /bookings/getBookings HTTP/1.1" 200 1213
+INFO "GET /bookings/getBookings HTTP/1.1" 200 1213
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /
+WARNING "GET / HTTP/1.1" 404 2410
+INFO "GET /admin/ HTTP/1.1" 200 8216
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9042
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/add/ HTTP/1.1" 200 8728
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/bookings/bookings/add/ HTTP/1.1" 200 9228
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/bookings/bookings/add/ HTTP/1.1" 302 0
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9476
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/10/change/ HTTP/1.1" 200 9108
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9264
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/1/change/ HTTP/1.1" 200 9106
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/bookings/bookings/1/change/ HTTP/1.1" 302 0
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9477
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+ERROR Internal Server Error: /admin/bookings/bookings/4/change/
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1859, in _changeform_view
+    "subtitle": str(obj) if obj else None,
+TypeError: __str__ returned non-string (type NoneType)
+ERROR "GET /admin/bookings/bookings/4/change/ HTTP/1.1" 500 110350
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\fasticket\urls.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\fasticket\urls.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\fasticket\urls.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\fasticket\urls.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\fasticket\urls.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\fasticket\urls.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\fasticket\urls.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\fasticket\urls.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+WARNING Not Found: /admin/tickets/seats/add/
+WARNING "GET /admin/tickets/seats/add/ HTTP/1.1" 404 4869
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9264
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9264
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+ERROR Internal Server Error: /admin/bookings/bookings/
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1964, in changelist_view
+    response = self.response_action(
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1593, in response_action
+    response = func(self, request, queryset)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\actions.py", line 39, in delete_selected
+    ) = modeladmin.get_deleted_objects(queryset, request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 2104, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\utils.py", line 153, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\utils.py", line 220, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\utils.py", line 206, in _nested
+    ret = [format_callback(obj)]
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\utils.py", line 128, in format_callback
+    no_edit_link = "%s: %s" % (capfirst(opts.verbose_name), obj)
+TypeError: __str__ returned non-string (type NoneType)
+ERROR "POST /admin/bookings/bookings/ HTTP/1.1" 500 133151
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "POST /admin/bookings/bookings/ HTTP/1.1" 200 7685
+INFO "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9403
+INFO "GET /admin/bookings/bookings/1/change/ HTTP/1.1" 200 9136
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9403
+INFO "GET /admin/bookings/bookings/2/change/ HTTP/1.1" 200 9063
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9403
+INFO "GET /admin/bookings/bookings/3/change/ HTTP/1.1" 200 9073
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 9403
+INFO "POST /admin/bookings/bookings/ HTTP/1.1" 200 7530
+INFO "POST /admin/bookings/bookings/ HTTP/1.1" 302 0
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 7528
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 7383
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/1/change/ HTTP/1.1" 200 9118
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/bookings/bookings/1/change/ HTTP/1.1" 200 9759
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/bookings/bookings/1/change/ HTTP/1.1" 200 9759
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/bookings/bookings/1/change/ HTTP/1.1" 200 9759
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/bookings/bookings/1/change/ HTTP/1.1" 302 0
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 7596
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/1/change/ HTTP/1.1" 200 9118
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/bookings/bookings/1/change/ HTTP/1.1" 200 9759
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "POST /admin/bookings/bookings/1/change/ HTTP/1.1" 302 0
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 7596
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 7078
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\migrations\0001_initial.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 7389
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 7389
+INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+ERROR Internal Server Error: /admin/bookings/bookings/1/change/
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1893, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1859, in _changeform_view
+    "subtitle": str(obj) if obj else None,
+TypeError: __str__ returned non-string (type int)
+ERROR "GET /admin/bookings/bookings/1/change/ HTTP/1.1" 500 110325
+INFO "GET /admin/bookings/bookings/ HTTP/1.1" 200 7371
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\bookings\models.py changed, reloading.
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
+INFO Watching for file changes with StatReloader
