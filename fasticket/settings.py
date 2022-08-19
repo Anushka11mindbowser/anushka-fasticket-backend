@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'drf_yasg',
     'bookings',
     'shows',
-    'tickets',
     'corsheaders'
 ]
 
