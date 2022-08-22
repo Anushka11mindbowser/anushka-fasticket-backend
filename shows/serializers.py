@@ -13,5 +13,5 @@ class MovieSerializer(serializers.ModelSerializer):
 class PlaysSerializer(serializers.ModelSerializer):
     class Meta:
         model = Plays
-        fields = ['play_name', 'play_genre', 'play_duration', 'play_poster', 'play_language']
+        fields = ['id','play_name', 'play_genre', 'play_duration', 'play_poster', 'play_language']
 

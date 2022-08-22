@@ -10,10 +10,8 @@ class Bookings(models.Model):
     phone = models.CharField(max_length=255, blank=False, null=True)
     show = models.CharField(max_length=255, blank=False, null=True)
     booked_at = models.DateTimeField(auto_now_add=True, blank=False, null=True)
-    seat_nos = ArrayField(ArrayField(models.CharField(max_length=5, blank=False, null=True)))
+    seat_nos = models.CharField(max_length=100, blank=False, null=True)
 
+    
     def __str__(self):
         return self.name
-
-   
-    

@@ -2667,3 +2667,1686 @@ Traceback (most recent call last):
     "subtitle": str(obj) if obj else None,
 TypeError: __str__ returned non-string (type int)
 ERROR 2022-08-19 23:49:36,531 basehttp 11360 19396 "GET /admin/bookings/bookings/1/change/ HTTP/1.1" 500 110325
+ERROR 2022-08-22 09:01:25,899 log 20768 27592 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\fields\__init__.py", line 2018, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\sql\query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\sql\query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\fields\__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 09:01:25,906 basehttp 20768 27592 "GET /shows/singleMovie/undefined HTTP/1.1" 500 163561
+ERROR 2022-08-22 09:01:57,261 log 20768 27592 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\fields\__init__.py", line 2018, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\query.py", line 636, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\sql\query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\sql\query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\sql\query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\sql\query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\db\models\fields\__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 09:01:57,262 basehttp 20768 27592 "GET /shows/singleMovie/undefined HTTP/1.1" 500 163561
+ERROR 2022-08-22 09:08:55,982 log 20768 26780 Internal Server Error: /admin/bookings/bookings/
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1964, in changelist_view
+    response = self.response_action(
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 1593, in response_action
+    response = func(self, request, queryset)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\actions.py", line 39, in delete_selected
+    ) = modeladmin.get_deleted_objects(queryset, request)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\options.py", line 2104, in get_deleted_objects
+    return get_deleted_objects(objs, request, self.admin_site)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\utils.py", line 153, in get_deleted_objects
+    to_delete = collector.nested(format_callback)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\utils.py", line 220, in nested
+    roots.extend(self._nested(root, seen, format_callback))
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\utils.py", line 206, in _nested
+    ret = [format_callback(obj)]
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\lib\site-packages\django\contrib\admin\utils.py", line 128, in format_callback
+    no_edit_link = "%s: %s" % (capfirst(opts.verbose_name), obj)
+TypeError: __str__ returned non-string (type NoneType)
+ERROR 2022-08-22 09:08:55,985 basehttp 20768 26780 "POST /admin/bookings/bookings/ HTTP/1.1" 500 133209
+ERROR 2022-08-22 09:33:52,737 log 25876 24196 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 09:33:52,758 basehttp 25876 24196 "GET /shows/singleMovie/undefined HTTP/1.1" 500 155033
+ERROR 2022-08-22 09:34:39,228 log 25876 18844 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 09:34:39,231 basehttp 25876 18844 "GET /shows/singleMovie/undefined HTTP/1.1" 500 155033
+ERROR 2022-08-22 11:02:30,902 log 8152 10648 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:02:30,911 basehttp 8152 10648 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:03:30,681 log 8152 2168 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:03:30,684 basehttp 8152 2168 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:03:37,250 log 8152 6200 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:03:37,252 basehttp 8152 6200 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:04:18,466 log 8152 6200 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:18,468 basehttp 8152 6200 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:04:28,227 log 8152 6200 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:28,230 basehttp 8152 6200 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:04:29,029 log 8152 6200 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:29,182 log 8152 17012 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:29,377 log 8152 3804 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:29,564 log 8152 16676 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:29,569 basehttp 8152 16676 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:04:29,798 log 8152 16676 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:29,802 basehttp 8152 16676 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:04:30,082 log 8152 16676 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:30,258 log 8152 5968 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:30,395 log 8152 8364 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:30,597 log 8152 4676 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:30,804 log 8152 4408 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:30,805 basehttp 8152 4408 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:04:38,113 log 8152 4408 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:38,114 basehttp 8152 4408 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:04:57,228 log 8152 4408 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:04:57,229 basehttp 8152 4408 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:05:02,747 log 8152 4408 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:05:02,749 basehttp 8152 4408 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:05:46,110 log 8152 4408 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:05:46,112 basehttp 8152 4408 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:06:02,997 log 8152 4408 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:06:03,001 basehttp 8152 4408 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:06:05,958 log 8152 4408 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:06:05,961 basehttp 8152 4408 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:06:06,966 log 8152 4408 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:06:06,968 basehttp 8152 4408 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:06:25,947 log 8152 16336 Internal Server Error: /shows/singleMovie/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 43, in get
+    movie = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 39, in get_object
+    return Movies.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:06:25,949 basehttp 8152 16336 "GET /shows/singleMovie/undefined HTTP/1.1" 500 154728
+ERROR 2022-08-22 11:07:29,393 log 8152 4408 Internal Server Error: /shows/singlePlay/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 79, in get
+    play = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 75, in get_object
+    return Plays.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:07:29,394 basehttp 8152 4408 "GET /shows/singlePlay/undefined HTTP/1.1" 500 154575
+ERROR 2022-08-22 11:09:10,506 log 8152 4408 Internal Server Error: /shows/singlePlay/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 79, in get
+    play = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 75, in get_object
+    return Plays.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:09:10,507 basehttp 8152 4408 "GET /shows/singlePlay/undefined HTTP/1.1" 500 154575
+ERROR 2022-08-22 11:09:22,829 log 8152 16336 Internal Server Error: /shows/singlePlay/undefined
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1988, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'undefined'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python39\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Python39\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 79, in get
+    play = self.get_object(pk)
+  File "C:\Users\DELL\OneDrive\Desktop\FasticketBackend\fasticket_venv\fasticket\shows\views.py", line 75, in get_object
+    return Plays.objects.get(pk=pk)
+  File "C:\Python39\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 482, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1448, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Python39\lib\site-packages\django\db\models\sql\query.py", line 1273, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Python39\lib\site-packages\django\db\models\lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Python39\lib\site-packages\django\db\models\fields\__init__.py", line 1990, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'undefined'.
+ERROR 2022-08-22 11:09:22,830 basehttp 8152 16336 "GET /shows/singlePlay/undefined HTTP/1.1" 500 154575
